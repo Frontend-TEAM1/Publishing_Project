@@ -1,16 +1,12 @@
 /* ==================================================================== */
-header {
+header, footer {
     margin-top: 15%;
 }
 
 * {
     background-color: #deeff5;
+    padding: 0 15px
 }
-
-/* 
-div {
-    margin-top: 4rem;
-} */
 
 /* ==================================================================== */
 
@@ -20,17 +16,22 @@ div {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 1px solid red;
+
 }
 
-.mainTxt {
+.sec1Txt {
+    /* position: relative; */
     font-weight: 700;
-    font-size: 5rem;
-    max-width: calc(100% - 50%);
+    font-size: 3vw;
+    max-width: calc(100% - 40%);
     margin: 0 auto;
+    border: 1px solid red;
+
 }
 
 .btn {
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     padding: 10px 35px;
     font-size: 1.5rem;
@@ -50,32 +51,150 @@ div {
     max-height: 1000px;
     border: 1px solid red;
     align-items: center;
+    text-align: center;
 }
 
 .imgItem {
+    border: 1px solid red;
     position: relative;
+    width: 30%;
+    align-items: center;
 }
 
 .swipeImg {
-    position: inherit;
+    /* position: inherit; */
     height: auto;    
     display: inline-block;
-}
-
-.swipeImg img {
     width: 100%;
-    /* position: relative; */
+    position: relative;
     object-fit: contain;
+    border: 1px solid red;
+
 }
 
 
 iframe {
-    position: inherit;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+      
 }
 
 
 /* ==================================================================== */
+
+.sec2 {
+    margin: 200px 0;
+    text-align: left;
+    border: 1px solid red;
+}
+
+.sec2Txt {
+    font-size: 2vw;
+    font-weight: 400;
+    max-width: calc(100% - 35%);
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+/* ==================================================================== */
+
+.sec3 {
+    display: flex;
+    border: 1px solid red;
+    margin: 200px auto;
+}
+
+.sec3TxtTitle {
+    width: 50%;
+    min-width: 25rem;
+    max-width: 50rem;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 1px solid red;    
+}
+
+.sec3TxtContent {
+    /* display: inline-block;
+    position: relative; */
+    width: 50%;
+    min-width: 25rem;
+    max-width: 50rem;
+    height: 100%;
+    border: 1px solid red;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.listWrap {
+    padding: 0;
+}
+
+.sec3List {
+    display: flex; 
+    /* position: relative; */
+    width: 100%;
+}
+
+.sec3ListItem {
+    display: inline-block; 
+    /* position: static; */
+    width: 50%;    
+    font-size: 1.5rem;
+}
+
+.sec3ListItem > div {
+    margin-bottom: 100px;
+}
+
+/* ==================================================================== */
+
+.sec4 {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.sec4Title {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.sec4Content {
+    display: inline-block;
+    position: relative;
+    /* width: 50rem; */
+    max-width: 50rem;
+    height: 100%;
+    border: 1px solid red;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}
+
+/* ==================================================================== */
+
+.sec5 {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.sec5Title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sec5Content {
+    margin-top: 20px;
+    max-width: 750px;
+    font-size: 20px;
+
+}
