@@ -1,0 +1,216 @@
+
+/*
+1. 주석 자리
+ : 최대한 구역별, 함수 부연설명 (이후에 지울거 지우고 정리하기)
+2. css 단위
+ : 폰트사이즈 => rem
+ : 모든 네이밍 => 카멜식 (ex. subHeader)
+ : 넓이/높이 => vw / vh / %
+3. 루트 => 페이지 정해지면 의논하기
+4. console.log(); => 개인 확인후 지우기 (문제 있을시 주석처리)
+5. 시멘틱태그 활용하여 구역나누기 (header / body / footer 사용)
+6. 화살표 함수와 일반 함수를 어떻게 구분하여 사용할 것인지
+7. 이벤트명 => 적당히 잘 타인이 알수 있게끔(하면서 맞춰보기)
+8. 작은따옴표('')
+9. 세미클론(;) 필수
+10. const = 변수명 => 이런식으로 = 양옆에 띄어쓰기 하기
+11. function (p1, p2) => ( ) 괄호안 양옆 띄우지 않기  (ex. ( p1, p2 ) => X)
+12. 구역별 / function 앞뒤 Enter (가독성을 위해)
+*/
+/* 내용 아무거나 넣음(임의) */
+
+main{
+    min-height: 100%;
+    padding-bottom: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+main .videoSection{
+    height: 90vh;
+    width: 91vw;
+    background-color: chocolate;
+    
+}
+main .sentenceSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 91vw;
+    background-color: deepskyblue;
+    
+}
+main .sentenceSection .sentenceBox{
+    position: absolute;
+    width: 70vw;
+    height: 40vh;
+    font-size: 5vw;
+    background-color:palevioletred 
+   
+}
+main .CEOSection{
+    display: inline-flex;
+    justify-content: start;
+    height: 60vh;
+    width: 91vw;
+    background-color: darkkhaki;
+}
+main .CEOSection .leftPart{
+    width: 46vw;
+    display: inline-block;
+    background-color: darkmagenta;
+    margin-right: 4vw;
+    
+}
+main .CEOSection .rightPart .btn{
+    cursor: pointer;
+    
+}
+main .CEOSection .rightPart{
+    text-align: start;
+    font-size: 3vw;
+    width: 40vw;
+    display: inline-block;
+    background-color: azure;
+    
+    
+}
+
+main .articleSection{
+    display: inline-flex;
+    justify-content: start;
+    height: 90vh;
+    width: 91vw;
+    background-color:lightslategray
+}
+main .articleSection .leftPart{
+    display: inline-block;
+    width: 45vw;
+    height: auto;
+    font-size: 3vw;
+    background-color:brown;
+    margin-right: 4vw;
+}
+main .articleSection .leftPart .btn{
+    cursor: pointer;
+}
+main .articleSection .rightPart{
+    display: inline-block;
+    text-align: start;
+    width: 40vw;
+    background-color:aqua;
+}
+
+main .whatWeDoSection{
+    display: inline-flex;
+    justify-content: start;
+    height: 90vh;
+    width: 91vw;
+    background-color: green;
+}
+main .whatWeDoSection .leftPart{
+    width: 45vw;
+    display: inline-block;
+    background-color: rgb(29, 152, 156);
+    margin-right: 4vw;
+}
+main .whatWeDoSection .rightPart{
+    text-align: start;
+    font-size: 3vw;
+    width: 42vw;
+    display: inline-block;
+    background-color: rgb(165, 9, 87);
+}
+main .whatWeDoSection .rightPart .btn{
+    cursor: pointer;
+}
+
+
+main .exploreWorkSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 91vw;
+    background-color: crimson;
+}
+main .exploreWorkSection .upperText{
+    
+    width: 70vw;
+    height: 30vh;
+    font-size: 4vw;
+}
+main .exploreWorkSection .ourWork .btn{
+    cursor: pointer;
+}
+main .EamesWithDropbox{
+    display: inline-flex;
+    justify-content: start;
+    height: 90vh;
+    width: 91vw;
+    background-color: lightgreen;
+}
+main .EamesWithDropbox .leftPart{
+    width: 50vw;
+    height: 43vh;
+    margin-right: 5vw;
+    cursor: pointer;
+    background-color: blue;
+     display: inline-block;
+}
+main .EamesWithDropbox .leftPart .photo{
+    background-color: burlywood;
+
+}
+main .EamesWithDropbox .leftPart .text{
+    display: inline-flex;
+    justify-content: start;
+    list-style: none;
+}
+main .EamesWithDropbox .leftPart .text .left{
+    float: left;
+    background-color: chocolate;
+    margin-right: 3vw;
+}
+main .EamesWithDropbox .leftPart .text .right{
+    float: left;
+}
+main .EamesWithDropbox .rightPart{
+    width: 50vw;
+    height: 43vh;
+    cursor: pointer;
+    background-color: blue;
+     display: inline-block;
+}
+
+main .EamesWithDropbox .rightPart .text{
+    display: inline-flex;
+    justify-content: start;
+    list-style: none;
+}
+main .EamesWithDropbox .rightPart .text .left{
+    float: left;
+    background-color: chocolate;
+    margin-right: 3vw;
+}
+main .EamesWithDropbox .rightPart .text .right{
+    float: left;
+}
+
+
+main .companiesSection{
+    height: 90vh;
+    width: 91vw;
+    background-color: purple;
+}
+main .contactSection{
+    height: 90vh;
+    width: 91vw;
+    background-color: seagreen;
+}
+
