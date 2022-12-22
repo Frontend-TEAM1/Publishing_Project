@@ -1,11 +1,114 @@
 /* ==================================================================== */
-header, footer {
-    margin-top: 15%;
-}
 
 * {
     background-color: #deeff5;
     padding: 0 15px
+}
+
+.text {
+    color: rgb(10, 10, 75);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==================================================================== */
+/* 헤더 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    margin-bottom: 200px;
+  }
+  
+  header > a > img {
+      width: 200px;
+  }
+  
+  header > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header > ul > li {
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+      Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    width: 120px;
+  }
+  
+  a {
+    color: #333;
+  }
+
+  /* 푸터 */
+  footer {
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 300px;
+}
+
+footer > div {
+    display: flex;
+    margin-left: 40px;
+}
+
+footer > div:first-child {
+    align-items: flex-start;
+    color: #333;
+    font-size: 0.8rem;
+}
+
+#footerLeft1 > li {
+    letter-spacing: 1px;
+    margin: 20px 40px;
+}
+
+#footerLeft2 > li {
+    letter-spacing: 1px;
+    margin: 20px 40px;
+}
+
+footer > div:last-child {
+    align-items: flex-end;
+}
+
+#footerRight {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+
+#footerRight > li {
+    margin-right: 60px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#footerRight > li:first-child {
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+#footerRight > li:first-child:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+li a:hover::after{
+    content: " ]";
+}
+
+li a:hover::before{
+    content: "[ ";
 }
 
 /* ==================================================================== */
@@ -16,116 +119,101 @@ header, footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
-
 }
 
 .sec1Txt {
-    /* position: relative; */
     font-weight: 700;
     font-size: 3vw;
-    max-width: calc(100% - 40%);
+    color: rgb(10, 10, 75);
+    max-width: calc(100% - 30%);
     margin: 0 auto;
-    border: 1px solid red;
 
 }
 
 .btn {
     margin-top: 4%;
     text-align: center;
-    padding: 10px 35px;
-    font-size: 1.5rem;
-    display: flex;
+    padding: 15px 25px;
     border-radius: 25px;
     background-color: rgb(10, 10, 80);
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
+    color: #deeff5;
+    font-size: 15px;
+    font-weight: 50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn:hover {
+    opacity: 0.5;
 }
 
 /* ==================================================================== */
 
-.imgWrap {
+.swiper {
+    height: 70vh;
+    width: 100vw;
+    margin: 10rem 0;
+  }
+  
+  .swiper-wrapper {
+    cursor: pointer;
+  }
+  
+  .swiper-slide{
     display: flex;
-    height: 500px;
-    max-height: 1000px;
-    border: 1px solid red;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-}
-
-.imgItem {
-    border: 1px solid red;
-    position: relative;
-    width: 30%;
-    align-items: center;
-}
-
-.swipeImg {
-    /* position: inherit; */
-    height: auto;    
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    object-fit: contain;
-    border: 1px solid red;
-
-}
-
-
-iframe {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;  
-      
-}
+  }
+  
+  .swiper-slide > img {
+    width: 90%;
+  }
+  
+  .swiper-slide > iframe {
+    /* pointer-events: none; */
+    height:100%;
+  }
 
 
 /* ==================================================================== */
 
 .sec2 {
     margin: 200px 0;
-    text-align: left;
-    border: 1px solid red;
 }
 
 .sec2Txt {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 400;
-    max-width: calc(100% - 35%);
+    max-width: calc(100vw - 60%);
+    min-width: 400px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 /* ==================================================================== */
 
 .sec3 {
     display: flex;
-    border: 1px solid red;
-    margin: 200px auto;
+    margin-bottom: 200px;
+    justify-content: center;
+    border-top: 1px solid  #b4c0c4;
+    padding-top: 200px;
 }
 
 .sec3TxtTitle {
-    width: 50%;
+    width: 50vw;
     min-width: 25rem;
     max-width: 50rem;
     font-size: 3rem;
-    font-weight: 700;
-    border: 1px solid red;    
+    font-weight: 650;
 }
 
 .sec3TxtContent {
-    /* display: inline-block;
-    position: relative; */
-    width: 50%;
+    width: 50vw;
     min-width: 25rem;
     max-width: 50rem;
     height: 100%;
-    border: 1px solid red;
-    font-size: 1.2rem;
-    font-weight: 200;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 40px;
 }
 
 .listWrap {
@@ -134,19 +222,29 @@ iframe {
 
 .sec3List {
     display: flex; 
-    /* position: relative; */
     width: 100%;
 }
 
 .sec3ListItem {
-    display: inline-block; 
-    /* position: static; */
     width: 50%;    
     font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .sec3ListItem > div {
     margin-bottom: 100px;
+}
+
+.sec3Job {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sec3Location {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 /* ==================================================================== */
@@ -157,11 +255,12 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    border-top: 1px solid  #b4c0c4;
+    padding-top: 200px;
 }
 
 .sec4Title {
-    font-size: 100px;
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -171,7 +270,6 @@ iframe {
     /* width: 50rem; */
     max-width: 50rem;
     height: 100%;
-    border: 1px solid red;
     font-size: 1.4rem;
     margin-top: 50px;
 }
@@ -184,7 +282,8 @@ iframe {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
+    border-top: 1px solid  #b4c0c4;
+    padding-top: 300px;
 }
 
 .sec5Title {
