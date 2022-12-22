@@ -1,0 +1,137 @@
+/* 
+주석 : 최상위 div/sector 구역 및 설명 필요한 함수
+css 단위 : 폰트사이즈 => rem : 카멜식 네이밍 (ex. subHeader) : 넓이/높이 => vw / vh / %
+CSS 루트 설정하기
+console.log(); => 개인 확인후 삭제 (문제 있을시 주석처리)
+시멘틱태그 활용하여 구역나누기 (header / body / footer)
+화살표 함수와 일반 함수를 어떻게 구분하여 사용할 것인지 추후 논의
+이벤트명 => 타인이 인지할수 있게 명확히 기재
+작은따옴표('') 사용
+세미클론(;) 필수
+const = 변수명 => 이런식으로 = 양옆에 띄어쓰기 삭제
+function (p1, p2) => ( ) 괄호안 양옆 띄어쓰기 삭제 (ex. ( p1, p2 ) => X)
+구역별 / function 앞뒤 Enter (가독성을 위해)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #DCEDF3;
+    color: #17214A;
+    align-items: center;
+}
+
+/* FontSize */
+li > h3 {
+    font-size: 2rem;
+}
+
+li > p {
+    font-size: 1.2rem;
+    line-height: 170%;
+}
+
+ul > li {
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 200%;
+}
+
+div > p {
+    font-size: 1.8rem;
+}
+
+/* divCss */
+.titleBox {
+    align-items: center;
+    text-align: center;
+}
+
+.videoBox {
+    margin-top: 5vh;
+    margin-right: 8vh;
+    margin-left: 8vh;
+    background-color: #17214A;
+    width: auto;
+    height: 125vh;
+
+}
+
+.subTitleBox{
+    height: 50vh;
+    padding: 8vh;
+}
+
+.subTitle {
+    margin-top: 5vh;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+
+.contentBox {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 16vh;
+}
+
+.imgSize {
+    width: 75vh;
+    height: 110vh;
+}
+
+.button {
+    background-color: #17214A;
+    color: #DCEDF3;
+    width: 14vh;
+    border-radius: 40px;
+    padding: 1rem 0;
+    margin: 3rem auto;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.liBox {
+    padding-left: 12vh;
+}
+
+.liBox2 {
+    padding-right: 12vh;
+    padding-top: 8vh;
+}
+
+.padTop {
+    padding-top: 15vh;
+}
+
+.padBottom {
+    padding-bottom: 15vh;
+}
+
+.none {
+    list-style: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.imageSlide {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    height: 40vh;
+    background-color: #17214A;
+}
+
+/* 동영상, 이미지 슬라이드, 글씨체, 겹치는 이미지, 버튼효과 */
+
+
