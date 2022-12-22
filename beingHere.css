@@ -16,7 +16,6 @@ function (p1, p2) => ( ) 괄호안 양옆 띄어쓰기 삭제 (ex. ( p1, p2 ) =>
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,18 +27,20 @@ body {
 
 /* FontSize */
 li > h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: Whyte Book,"system-ui"
 }
 
 li > p {
     font-size: 1.2rem;
+    font-family: Whyte Book,"system-ui";
     line-height: 170%;
 }
 
 ul > li {
     font-size: 1rem;
-    font-family: sans-serif;
-    line-height: 200%;
+    font-family: Monument Grotesk Semi Mono,Monaco,Courier,monospace;
+    line-height: 220%;
 }
 
 div > p {
@@ -52,18 +53,18 @@ div > p {
     text-align: center;
 }
 
-.videoBox {
-    margin-top: 5vh;
-    margin-right: 8vh;
-    margin-left: 8vh;
-    background-color: #17214A;
-    width: auto;
-    height: 125vh;
-
+.video {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .subTitleBox{
-    height: 50vh;
+    height: 40vh;
     padding: 8vh;
 }
 
@@ -83,9 +84,43 @@ div > p {
     padding-top: 16vh;
 }
 
-.imgSize {
-    width: 75vh;
-    height: 110vh;
+.imgBox {
+    position: relative;
+}
+
+.img {
+    width: 90vh;
+    height: 115vh;
+    z-index: 0;
+}
+
+.gifSmile {
+    width: auto;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    top: 87%;
+    left: 78%;
+    z-index: 1;
+}
+
+.gifHeart {
+    width: auto;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    top: 87%;
+    z-index: 1;
+}
+
+.gifShell {
+    width: auto;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 77%;
+    z-index: 1;
 }
 
 .button {
@@ -100,17 +135,27 @@ div > p {
     cursor: pointer;
 }
 
+.button:hover {
+    opacity: 70%;
+}
+
+.button:active {
+    opacity: 100%;
+}
+
 .liBox {
-    padding-left: 12vh;
+    padding-left: 15vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .liBox2 {
-    padding-right: 12vh;
+    padding-right: 15vh;
     padding-top: 8vh;
 }
 
 .padTop {
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 .padBottom {
@@ -125,13 +170,134 @@ div > p {
     text-align: center;
 }
 
-.imageSlide {
+.imgSlide {
     padding-top: 15vh;
     padding-bottom: 15vh;
     height: 40vh;
-    background-color: #17214A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 동영상, 이미지 슬라이드, 글씨체, 겹치는 이미지, 버튼효과 */
+.imgSlide > ul {
+    display: flex;
+    align-items: flex-end;
+}
 
+.imgSlide > ul > li {
+    cursor: grabbing;
+    float: left;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    list-style: none;
+}
+
+/* header & footer css */
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    margin-bottom: 200px;
+  }
+  
+  header > a > img {
+      width: 200px;
+  }
+  
+  header > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header > ul > li {
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+      Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    width: 120px;
+  }
+  
+  a {
+    color: #333;
+  }
+  
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 300px;
+  }
+  
+  footer > div {
+      display: flex;
+      margin-left: 40px;
+  }
+  
+  footer > div:first-child {
+      align-items: flex-start;
+      color: #333;
+      font-size: 0.8rem;
+  }
+  
+  #footerLeft1 > li {
+    letter-spacing: 1px;
+    margin: 20px 40px;
+  }
+  
+  #footerLeft2 > li {
+    letter-spacing: 1px;
+    margin: 20px 40px;
+  }
+  
+  footer > div:last-child {
+      align-items: flex-end;
+  }
+  
+  #footerRight {
+      display: flex;
+      margin-right: 40px;
+      align-items: center;
+  }
+  
+  #footerRight > li {
+    margin-right: 60px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  #footerRight > li:first-child {
+      border: 1px solid #333;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+  
+  #footerRight > li:first-child:hover {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+  }
+  
+  li a:hover::after{
+      content: " ]";
+  }
+  
+  li a:hover::before{
+      content: "[ ";
+  }
 
