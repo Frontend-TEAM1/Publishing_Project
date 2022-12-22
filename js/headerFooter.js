@@ -2,8 +2,6 @@ const $header = document.querySelector('header');
 
 
 document.addEventListener('mousewheel', (e)=>{
-    console.log(e);
-    console.log(document.documentElement);
     if(e.wheelDelta>0){
         $header.style.position = 'sticky';
         $header.style.top = '0';
