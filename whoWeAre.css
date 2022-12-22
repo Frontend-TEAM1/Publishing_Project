@@ -12,35 +12,7 @@ body {
 
 @font-face {
   font-family: Secular-one;
-  src: url(../ToyProject/asset/font/Secular_One/SecularOne-Regular.ttf);
-}
-
-:root {
-
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 5rem;
-  margin-bottom: 200px;
-}
-
-header > ul {
-  display: flex;
-}
-
-header >ul > li {
-  margin-left: 4rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #333;
-}
-
-header > ul > li > a{
-  color: #333;
+  src: url(./asset/font/Secular_One/SecularOne-Regular.ttf);
 }
 
 #text1 {
@@ -127,7 +99,6 @@ header > ul > li > a{
 
 .text3OurValues {
     width: 45vw;
-    /* height: 20vh; */
     margin: 2rem auto;
     font-size: 1.2rem;
     line-height: 2rem;
