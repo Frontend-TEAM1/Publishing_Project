@@ -19,198 +19,217 @@
 */
 /* 내용 아무거나 넣음(임의) */
 
-main{
-    min-height: 100%;
-    padding-bottom: 40vh;
-    display: flex;
-    flex-flow: row wrap;
-    height: 100vh;
-    width: 100vw;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
 }
 
-main .videoSection{
-    height: 90vh;
+#section1{
     width: 91vw;
-    background-color: chocolate;
-    
+    margin: 0 auto;
+    height: 70vh;
 }
-main .sentenceSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 60vh;
-    width: 91vw;
-    background-color: deepskyblue;
-    
-}
-main .sentenceSection .sentenceBox{
-    position: absolute;
-    width: 70vw;
-    height: 40vh;
-    font-size: 5vw;
-    background-color:palevioletred 
-   
-}
-main .CEOSection{
-    display: inline-flex;
-    justify-content: start;
-    height: 60vh;
-    width: 91vw;
-    background-color: darkkhaki;
-}
-main .CEOSection .leftPart{
-    width: 46vw;
-    display: inline-block;
-    background-color: darkmagenta;
-    margin-right: 4vw;
-    
-}
-main .CEOSection .rightPart .btn{
-    cursor: pointer;
-    
-}
-main .CEOSection .rightPart{
-    text-align: start;
-    font-size: 3vw;
-    width: 40vw;
-    display: inline-block;
-    background-color: azure;
-    
-    
-}
-
-main .articleSection{
-    display: inline-flex;
-    justify-content: start;
-    height: 90vh;
-    width: 91vw;
-    background-color:lightslategray
-}
-main .articleSection .leftPart{
-    display: inline-block;
-    width: 45vw;
-    height: auto;
-    font-size: 3vw;
-    background-color:brown;
-    margin-right: 4vw;
-}
-main .articleSection .leftPart .btn{
-    cursor: pointer;
-}
-main .articleSection .rightPart{
-    display: inline-block;
-    text-align: start;
-    width: 40vw;
-    background-color:aqua;
-}
-
-main .whatWeDoSection{
-    display: inline-flex;
-    justify-content: start;
-    height: 90vh;
-    width: 91vw;
-    background-color: green;
-}
-main .whatWeDoSection .leftPart{
-    width: 45vw;
-    display: inline-block;
-    background-color: rgb(29, 152, 156);
-    margin-right: 4vw;
-}
-main .whatWeDoSection .rightPart{
-    text-align: start;
-    font-size: 3vw;
-    width: 42vw;
-    display: inline-block;
-    background-color: rgb(165, 9, 87);
-}
-main .whatWeDoSection .rightPart .btn{
-    cursor: pointer;
-}
-
-
-main .exploreWorkSection{
+#section2{
+    padding-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60vh;
-    width: 91vw;
-    background-color: crimson;
-}
-main .exploreWorkSection .upperText{
-    
-    width: 70vw;
-    height: 30vh;
+    width: 60vw;
+    margin: 0 auto;
+    height: 90vh;
     font-size: 4vw;
 }
-main .exploreWorkSection .ourWork .btn{
-    cursor: pointer;
+
+
+#section3{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    width: 91vw;
+    padding-bottom: 10vw;
+    
 }
-main .EamesWithDropbox{
-    display: inline-flex;
-    justify-content: start;
+#section3 .leftPart{
+    margin-right: 15vw;
+    width: 40vw;
+    
+}
+#section3 .rightPart{
+    width: 40vw;
+}
+#section3 .rightPart .btnStart{
+    cursor: pointer;
+    
+}
+#section3 .rightPart>div:first-of-type{
+    text-align: start;
+    font-size: 2vw;
+    width: 20vw;
+}
+
+#section4{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
     height: 90vh;
     width: 91vw;
-    background-color: lightgreen;
+    
 }
-main .EamesWithDropbox .leftPart{
+#section4 .leftPart{
+    display: inline-block;
+    width: 25vw;
+    height: auto;
+    font-size: 1.5vw;
+    margin-right: 4vw;
+}
+#section4 .leftPart .btn{
+    cursor: pointer;
+}
+#section4 .rightPart{
+    display: inline-block;
+    text-align: start;
+}
+
+#section5{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    width: 91vw;
+    
+}
+#section5 .leftPart{
+    margin-right: 15vw;
+    width: 40vw;
+}
+#section5 .rightPart{
+    width: 40vw;
+}
+#section5 .rightPart .btn{
+    cursor: pointer;
+}
+#section5 .rightPart>div:first-of-type{
+    text-align: start;
+    font-size: 1.5vw;
+    width: 20vw;
+}
+
+
+#section6{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 91vw;
+}
+.upperText{
+    
     width: 50vw;
+    height: 30vh;
+    font-size: 3vw;
+    
+}
+#section6 .ourWork .btn{
+    cursor: pointer;
+}
+#section7{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    width: 91vw;
+    padding-bottom: 20vh;
+}
+#section7 .leftPart{
+    width: 40vw;
     height: 43vh;
     margin-right: 5vw;
     cursor: pointer;
-    background-color: blue;
+    
      display: inline-block;
 }
-main .EamesWithDropbox .leftPart .photo{
-    background-color: burlywood;
 
-}
-main .EamesWithDropbox .leftPart .text{
+#section7 .leftPart .text{
+    width: 40vw;
     display: inline-flex;
-    justify-content: start;
+    justify-content: space-between;
     list-style: none;
 }
-main .EamesWithDropbox .leftPart .text .left{
+#section7 .leftPart .text .left{
     float: left;
     background-color: chocolate;
-    margin-right: 3vw;
+    margin-right: 10vw;
+    
 }
-main .EamesWithDropbox .leftPart .text .right{
+#section7 .leftPart .text .right{
     float: left;
 }
-main .EamesWithDropbox .rightPart{
-    width: 50vw;
+
+#section7 .rightPart{
+    width: 40vw;
     height: 43vh;
     cursor: pointer;
     background-color: blue;
      display: inline-block;
 }
 
-main .EamesWithDropbox .rightPart .text{
+#section7 .rightPart .text{
     display: inline-flex;
     justify-content: start;
     list-style: none;
 }
-main .EamesWithDropbox .rightPart .text .left{
+#section7 .rightPart .text .left{
     float: left;
     background-color: chocolate;
     margin-right: 3vw;
 }
-main .EamesWithDropbox .rightPart .text .right{
+#section7 .rightPart .text .right{
     float: left;
 }
 
 
-main .companiesSection{
+#section8{
+    display: flex;
     height: 90vh;
     width: 91vw;
+    margin: 0 auto;
     background-color: purple;
 }
-main .contactSection{
+.imageBox{
+    width: 15vw;
+    margin: 0 auto;
+}
+
+#section9{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     height: 90vh;
     width: 91vw;
-    background-color: seagreen;
+}
+.btnCenter{
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: gold;
+    width: 20vw;
+    height: auto;
+    
+}
+.btnStart{
+    cursor: pointer;
+    background-color: gold;
+    width: 20vw;
+    height: auto;
+    
 }
 
