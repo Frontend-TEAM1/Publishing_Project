@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+KR&family=Roboto+Mono:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  margin-bottom: 200px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header > a {
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+}
+
+header > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > ul > li {
+  margin-left: 4rem;
+  font-size: 0.9rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+  width: 120px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer {
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  margin-top: 300px;
+}
+
+footer > div {
+  display: flex;
+  margin-left: 40px;
+}
+
+footer > div:first-child {
+  align-items: flex-start;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+#footerLeft1 > li {
+  letter-spacing: 1px;
+  margin: 20px 40px;
+}
+
+#footerLeft2 > li {
+  letter-spacing: 1px;
+  margin: 20px 40px;
+}
+
+footer > div:last-child {
+  align-items: flex-end;
+}
+
+#footerRight {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+#footerRight > li {
+  margin-right: 60px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+#footerRight > li:first-child {
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#footerRight > li:first-child:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+li a:hover::after {
+  content: ' ]';
+}
+
+li a:hover::before {
+  content: '[ ';
+}
+
+footer div ul {
+  list-style: none;
+}
+
+/* 폰트 */
+
+.SegoeUIFont {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.TrebuchetMSFont {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+}
+
+.ArialFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.VerdanaFont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.GillSansFont {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boldFont {
+  font-weight: bold;
+}
+
+.fontSize1 {
+  font-size: 2rem;
+}
+
+.fontSize2 {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
+.fontSize3 {
+  font-size: 2rem;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.fontSize4 {
+  font-size: 1.5rem;
+}
+
+.fontSize5 {
+  font-size: 0.8rem;
+}
+
+.fontColor {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.alignItmes {
+  align-items: flex-end;
+}
+
+.inline {
+  display: inline;
+}
+
+.justifyContnet {
+  justify-content: center;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceBetweend {
+  justify-content: space-between;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.title {
+  font-size: 4em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.title2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 15rem 0;
+  text-align: center;
+}
+
+.title3 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  align-items: center;
+  margin: 15rem 0 0 0;
+  text-align: center;
+}
+
+.title4 {
+  font-size: 4em;
+  margin: 15rem 0 5rem 0;
+  text-align: center;
+}
+
+.title5 {
+  font-size: 4em;
+  margin: 4em 0;
+  text-align: center;
+}
+
+.button {
+  font-size: 1rem;
+  margin: 1.5rem 0 0 0;
+  padding: 0.8rem 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 2em;
+  letter-spacing: 0.2em;
+}
+
+.margin {
+  margin: 10rem 5rem 30rem 5rem;
+}
+
+.margin2 {
+  margin: 1rem auto;
+}
+
+.margin3 {
+  margin: 10em auto;
+}
+
+.margin4 {
+  margin: 0 auto;
+  padding: 0 0 10rem 0;
+}
+
+.margin5 {
+  margin: 0 1em;
+}
+
+.padding {
+  padding-top: 1rem;
+}
+
+.wrap2 {
+  width: 600px;
+  height: 600px;
+}
+
+.backgroundImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 3em 0;
+}
+
+.imageCenter {
+  margin: 0 5rem;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.821);
+  padding: 0.5rem 0;
+}
+
+.swiper {
+  height: 70vh;
+  width: 100vw;
+  margin: 10rem 0;
+}
+
+.swiper-wrapper {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
