@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./js/swiper.js" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/d1c72c4e39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./js/headerFooter.js">
     <title>BeingHere</title>
 </head>
 
@@ -35,10 +38,6 @@
             <iframe src="https://player.vimeo.com/video/452374517?h=90d0b1cf1c&controls=0&loop=1&background=1&app_id=122963"
                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture;" 
                  allowfullscreen style="position:absolute; top:40%; left: 0; width: 100%; height: 100%; padding-bottom: 20vh;"></iframe>
-            <!-- <video class="video" 
-                src="https://player.vimeo.com/video/452374517?h=90d0b1cf1c&controls=0&loop=1&background=1&app_id=122963"
-                width="auto" height="1125vh" controls loop autoplay>
-            </video> -->
             <button class="playBtn">▶</button>
         </div>
         
@@ -249,22 +248,20 @@
     </div>
 
     <!-- image slide -->
-    <div class="imgSlide swiper">
+    <div class="swiper">
         <div class="swiper-wrapper">
-            <ul class="swiper-slide">
-                <li>
+                <div class="swiper-slide">
                     <img src="https://images.prismic.io/instrument-v5/fe827d52-7432-44f4-a306-e81f345ab802_community-1.jpg?auto=compress,format&w=1280&dpr=1" width="554vh" height="auto" alt="">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="https://images.prismic.io/instrument-v5/cc357a48-79fa-4421-b9d0-0a03df473020_community-2.jpg?auto=compress,format&w=1280&dpr=1" width="554vh" height="auto" alt="">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="https://images.prismic.io/instrument-v5/3390ef88-3fe8-489b-ab0c-cc58408f4082_community-3.jpg?auto=compress,format&w=1280&dpr=1" width="554vh" height="auto" alt="">
-                </li>
-                <li>
+                </div>
+                <div class="swiper-slide">
                     <img src="https://images.prismic.io/instrument-v5/912c327d-470d-421c-ba77-80db88a6cafa_community-4.jpg?auto=compress,format&w=1280&dpr=1" width="554vh" height="auto" alt="">
-                </li>
-            </ul>
+                </div>
         </div>
     </div>
 
@@ -283,7 +280,7 @@
     </div>
 </main>
 
-<!-- <script>
+<script>
      // Swiper
      const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -293,9 +290,10 @@
         centeredSlides: false,
 
       });
-</script> -->
+</script>
 
 <!-- footer -->
+
 <footer>
     <div>
         <ul id="footerLeft1">

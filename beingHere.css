@@ -57,16 +57,6 @@ div > p {
     padding-bottom: 110vh;
 }
 
-/* .video {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-} */
-
 .playBtn {
     width: 5vh;
     height: 5vh;
@@ -199,22 +189,12 @@ div > p {
     text-align: center;
 }
 
-.imgSlide {
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .swiper {
     height:  60vh;
 }
 
-.swiper-wrapper > ul {
+.swiper-wrapper {
     display: flex;
-    align-items: flex-end;
 }
 
 .swiper-wrapper > ul > li {
@@ -224,11 +204,11 @@ div > p {
     list-style: none;
 }
 
-.imgSlide > ul > li:hover {
+.swiper-wrapper > ul > li:hover {
     cursor: grab;
 }
 
-.imgSlide > ul > li:active {
+.swiper-wrapper > ul > li:active {
     cursor: grabbing;
 }
 
@@ -243,6 +223,7 @@ header {
     align-items: center;
     padding: 3rem 5rem;
     margin-bottom: 200px;
+    text-decoration: none;
   }
   
   header > a > img {
@@ -280,6 +261,7 @@ header {
     justify-content: space-between;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 300px;
+    text-decoration: none;
   }
   
   footer > div {
