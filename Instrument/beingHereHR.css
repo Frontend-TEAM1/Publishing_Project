@@ -55,6 +55,8 @@ div > p {
 
 .videoBox {
     padding-bottom: 110vh;
+    margin-top: 50px;
+    top: 0;
 }
 
 /* .video {
@@ -118,7 +120,7 @@ div > p {
 }
 
 .img {
-    width: 90vh;
+    width: 80vh;
     height: 115vh;
     z-index: 0;
 }
@@ -174,7 +176,7 @@ div > p {
 
 .liBox {
     padding-left: 15vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
 }
 
