@@ -53,7 +53,11 @@ div > p {
     text-align: center;
 }
 
-.video {
+.videoBox {
+    padding-bottom: 110vh;
+}
+
+/* .video {
     align-items: center;
     justify-content: center;
     position: relative;
@@ -61,6 +65,31 @@ div > p {
     transform: translateX(-50%);
     padding-top: 3vh;
     padding-bottom: 3vh;
+} */
+
+.playBtn {
+    width: 5vh;
+    height: 5vh;
+    font-size: 2rem;
+    background-color: #17214A;
+    color: #DCEDF3;
+    border: none;
+    border-radius: 50%;
+    opacity: 80%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+
+.playBtn:hover {
+    width: 5.5vh;
+    height: 5.5vh;
+    font-size: 1.9rem;
+    background-color: #17214A;
+    color: #DCEDF3;
+    border: none;
+    border-radius: 50%;
+    opacity: 80%;
 }
 
 .subTitleBox{
@@ -179,17 +208,28 @@ div > p {
     align-items: center;
 }
 
-.imgSlide > ul {
+.swiper {
+    height:  60vh;
+}
+
+.swiper-wrapper > ul {
     display: flex;
     align-items: flex-end;
 }
 
-.imgSlide > ul > li {
-    cursor: grabbing;
+.swiper-wrapper > ul > li {
     float: left;
     margin-right: 2vh;
     margin-left: 2vh;
     list-style: none;
+}
+
+.imgSlide > ul > li:hover {
+    cursor: grab;
+}
+
+.imgSlide > ul > li:active {
+    cursor: grabbing;
 }
 
 /* header & footer css */
@@ -197,7 +237,6 @@ header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -217,6 +256,7 @@ header {
   }
   
   header > ul > li {
+    list-style: none;
     margin-left: 4rem;
     font-size: 0.9rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
@@ -234,7 +274,6 @@ header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
     height: 25vh;
     display: flex;
@@ -255,11 +294,13 @@ header {
   }
   
   #footerLeft1 > li {
+    list-style: none;
     letter-spacing: 1px;
     margin: 20px 40px;
   }
   
   #footerLeft2 > li {
+    list-style: none;
     letter-spacing: 1px;
     margin: 20px 40px;
   }
@@ -275,6 +316,7 @@ header {
   }
   
   #footerRight > li {
+    list-style: none;
     margin-right: 60px;
     font-size: 1.3rem;
     cursor: pointer;
