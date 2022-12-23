@@ -1,6 +1,4 @@
-
 const $header = document.querySelector('header');
-
 
 document.addEventListener('mousewheel', (e)=>{
     if(e.wheelDelta>0){
