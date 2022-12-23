@@ -1,5 +1,23 @@
 # Publishing_Project
 
+## Clone coding team project
+### Original web site : https://www.instrument.com/
+
+### Page detail
+#### - Header and footer (common)   - Nasil
+#### - Main page                    - Jaehoon
+#### - What we do page              - Hyunseo
+#### - Who we are page              - Youngseung
+#### - Being here page              - Hyerin
+#### - Careers page                 - Juram
+
+### only cloned 1 depth page. so only button hover or mouse event are adaptted.
+
+
+# Publishing_Project
+
+
+--------------------------------------------------------------------------------------
 프론트엔드 동료학습 1팀 토이 퍼블리싱 프로젝트입니다.
 
 클론 퍼블리싱 페이지:
