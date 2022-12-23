@@ -2,13 +2,15 @@
 
 * {
     background-color: #deeff5;
-    padding: 0 15px
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .text {
     color: rgb(10, 10, 75);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 /* ==================================================================== */
 /* 헤더 */
@@ -20,8 +22,10 @@ header {
     margin-bottom: 200px;
   }
   
-  header > a > img {
-      width: 200px;
+  header > a {
+      font-size: 25px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: lighter;
   }
   
   header > ul {
@@ -166,10 +170,10 @@ li a:hover::before{
   
   .swiper-slide > img {
     width: 90%;
+    background-size: contain;
   }
   
   .swiper-slide > iframe {
-    /* pointer-events: none; */
     height:100%;
   }
 
@@ -192,10 +196,10 @@ li a:hover::before{
 
 .sec3 {
     display: flex;
-    margin-bottom: 200px;
     justify-content: center;
     border-top: 1px solid  #b4c0c4;
     padding-top: 200px;
+    margin: 0 100px 200px 100px;
 }
 
 .sec3TxtTitle {
@@ -218,7 +222,8 @@ li a:hover::before{
 
 .listWrap {
     width: 100%;
-    padding: 0;
+    padding: 100px;
+    margin: 0 auto;
 }
 
 .sec3List {
