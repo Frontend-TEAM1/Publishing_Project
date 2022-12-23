@@ -1,0 +1,379 @@
+
+/*
+1. 주석 자리
+ : 최대한 구역별, 함수 부연설명 (이후에 지울거 지우고 정리하기)
+2. css 단위
+ : 폰트사이즈 => rem
+ : 모든 네이밍 => 카멜식 (ex. subHeader)
+ : 넓이/높이 => vw / vh / %
+3. 루트 => 페이지 정해지면 의논하기
+4. console.log(); => 개인 확인후 지우기 (문제 있을시 주석처리)
+5. 시멘틱태그 활용하여 구역나누기 (header / body / footer 사용)
+6. 화살표 함수와 일반 함수를 어떻게 구분하여 사용할 것인지
+7. 이벤트명 => 적당히 잘 타인이 알수 있게끔(하면서 맞춰보기)
+8. 작은따옴표('')
+9. 세미클론(;) 필수
+10. const = 변수명 => 이런식으로 = 양옆에 띄어쓰기 하기
+11. function (p1, p2) => ( ) 괄호안 양옆 띄우지 않기  (ex. ( p1, p2 ) => X)
+12. 구역별 / function 앞뒤 Enter (가독성을 위해)
+*/
+/* 내용 아무거나 넣음(임의) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    
+
+}
+
+/*헤더 푸터 */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 3rem 5rem;
+    margin-bottom: 200px;
+  }
+  
+  header > a > img {
+      width: 200px;
+  }
+  
+  header > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header > ul > li {
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+      Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 120px;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+  }
+  
+  footer {
+      height: 25vh;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 300px;
+  }
+  
+  footer > div {
+      display: flex;
+      margin-left: 40px;
+  }
+  
+  footer > div:first-child {
+      align-items: flex-start;
+      color: #333;
+      font-size: 0.8rem;
+  }
+  
+  #footerLeft1 > li {
+      letter-spacing: 1px;
+      margin: 20px 40px;
+  }
+  
+  #footerLeft2 > li {
+      letter-spacing: 1px;
+      margin: 20px 40px;
+  }
+  
+  footer > div:last-child {
+      align-items: flex-end;
+  }
+  
+  #footerRight {
+      display: flex;
+      margin-right: 40px;
+      align-items: center;
+  }
+  
+  #footerRight > li {
+      margin-right: 60px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      margin-bottom: 30px;
+  }
+  
+  #footerRight > li:first-child {
+      border: 1px solid #333;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+  
+  #footerRight > li:first-child:hover {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+  }
+  
+  li a:hover::after{
+      content: " ]";
+  }
+  
+  li a:hover::before{
+      content: "[ ";
+  }
+  /*메인 페이지 */
+.btnCenter{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    height: auto;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 180px;
+    border-radius: 30px;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    
+}
+.btnStart{
+    display: flex;
+    justify-content: center;
+    float: left;
+    cursor: pointer;
+    height: auto;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 180px;
+    border-radius: 30px;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+#section1{
+    width: 100%;
+    margin: 0 auto;
+    height: 70vh;
+}
+#section2{
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 90vh;
+    font-size: 4vw;
+}
+
+
+#section3{
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+#section3 .leftPart{
+    margin-left: 10%;
+    width: 40%;
+    
+}
+#section3 .rightPart{
+    margin-top: 5%;
+    float: left;
+    margin-left: 15%;
+    width: 40%;
+}
+#section3 .rightPart .btnStart{
+    
+    cursor: pointer;
+    
+}
+#section3 .rightPart>div:first-of-type{
+    text-align: start;
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+#section4{
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+#section4 .leftPart{
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+}
+#section4 .leftPart .btn{
+    cursor: pointer;
+}
+#section4 .leftPart>div:first-of-type{
+    margin-top: 5%;
+    text-align: start;
+    font-size: 2vw;
+    width: 80%;
+}
+#section4 .rightPart{
+    width: 40%;
+}
+
+#section5{
+    margin: 0 auto;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+#section5 .leftPart{
+    margin-left: 10%;
+    width: 40%;
+}
+#section5 .rightPart{
+    float: left;
+    margin-left: 15%;
+    width: 40%;
+}
+#section5 .rightPart .btn{
+    cursor: pointer;
+}
+#section5 .rightPart>div:first-of-type{
+    text-align: start;
+    font-size: 1.5vw;
+    width: 60%;
+}
+
+
+#section6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    height: 90vh;
+}
+.upperText{
+    width: 100%;
+    font-size: 3vw;
+}
+#section6 .ourWork .btn{
+    cursor: pointer;
+}
+
+#section7{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    width: 90%;
+    padding-bottom: 20vh;
+    margin-left: 5%;
+}
+#section7 .leftPart{
+    width: 45%;
+    height: 60vh;
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#section7 .leftPart .text{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#section7 .leftPart .text .left{
+    font-family: 'Lucida Sans';
+    font-size: 2rem;
+    height: 20vh;
+    width: 60%;
+    float: left;
+    
+}
+#section7 .leftPart .text .right{
+    line-height: 170%;
+    width: 50%;
+    height: 20vh;
+    float: left;
+}
+
+#section7 .rightPart{
+    width: 45%;
+    height: 60vh;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#section7 .rightPart .text{
+    width: 100%;
+    display: inline-flex;
+    justify-content: start;
+    list-style: none;
+}
+#section7 .rightPart .text .left{
+    font-size: 2rem;
+    font-family: 'Lucida Sans';
+    height: 20vh;
+    width: 40%;
+    float: left;
+    margin-right: 20%;
+}
+#section7 .rightPart .text .right{
+    line-height: 170%;
+    width: 50%;
+    height: 20vh;
+    float: left;
+}
+
+/* 회사 로고들 */
+.imageBox{
+    padding-top: 5%;
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    width: 60%;
+    padding-bottom: 10%;
+    margin: 0 auto;
+}
+.imageBox #firstImage{
+    transition-duration: 1;
+}
+
+#section9{
+    padding-top: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+
