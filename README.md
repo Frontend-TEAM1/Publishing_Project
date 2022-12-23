@@ -5,6 +5,18 @@
 클론 퍼블리싱 페이지:
 https://www.instrument.com/
 
+[마크업 담당 페이지]
+1) 헤더 & 푸터 - 김나실 님
+2) 메인페이지 - 이재훈 님
+3) WHAT WE DO - 구현서 님
+4) WHO WE ARE - 장영승 님
+5) BEING HERE - 양혜린 님
+6) CAREERS - 이주람 님
+
+<컨벤션>
+*Udacity Git Commit Message Style Guide 참고
+
+그외)
 1. 주석
  : 최상위 div/sector 구역 및 설명 필요한 함수 
 2. css 단위
