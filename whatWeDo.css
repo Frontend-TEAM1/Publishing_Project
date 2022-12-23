@@ -20,11 +20,9 @@ header ul li {
 }
 
 header > a {
-  text-decoration: none;
-}
-
-header > a > img {
-  width: 200px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
 }
 
 header > ul {
@@ -45,6 +43,7 @@ header > ul > li {
 
 a {
   color: #333;
+  text-decoration: none;
 }
 
 footer {

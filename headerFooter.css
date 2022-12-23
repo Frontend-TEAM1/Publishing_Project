@@ -14,8 +14,10 @@ header {
   margin-bottom: 200px;
 }
 
-header > a > img {
-    width: 200px;
+header > a {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
 }
 
 header > ul {
