@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    margin-bottom: 200px;
+    background-color: black;
+  }
+  
+  header > a > img {
+      width: 200px;
+  }
+  
+  header > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header > ul > li {
+    margin-left: 4rem;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+      Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 120px;
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+  }
+  
+  footer {
+      height: 25vh;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 300px;
+  }
+  
+  footer > div {
+      display: flex;
+      margin-left: 40px;
+  }
+  
+  footer > div:first-child {
+      align-items: flex-start;
+      color: #333;
+      font-size: 0.8rem;
+  }
+  
+  #footerLeft1 > li {
+      letter-spacing: 1px;
+      margin: 20px 40px;
+  }
+  
+  #footerLeft2 > li {
+      letter-spacing: 1px;
+      margin: 20px 40px;
+  }
+  
+  footer > div:last-child {
+      align-items: flex-end;
+  }
+  
+  #footerRight {
+      display: flex;
+      margin-right: 40px;
+      align-items: center;
+  }
+  
+  #footerRight > li {
+      margin-right: 60px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      margin-bottom: 30px;
+  }
+  
+  #footerRight > li:first-child {
+      border: 1px solid #333;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+  
+  #footerRight > li:first-child:hover {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+  }
+  
+  li a:hover::after{
+      content: " ]";
+  }
+  
+  li a:hover::before{
+      content: "[ ";
+  }
