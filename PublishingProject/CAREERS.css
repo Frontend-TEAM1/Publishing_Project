@@ -217,16 +217,20 @@ li a:hover::before{
 }
 
 .listWrap {
+    width: 100%;
     padding: 0;
 }
 
 .sec3List {
+    justify-content: center;
     display: flex; 
     width: 100%;
 }
 
 .sec3ListItem {
+    padding: 0;
     width: 50%;    
+    max-width: 50rem;
     font-size: 1.5rem;
     font-weight: 400;
 }
