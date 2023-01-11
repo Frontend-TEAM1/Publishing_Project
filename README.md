@@ -13,6 +13,3 @@
 #### - Careers page                 - Juram
 
 ### only cloned 1 depth page. so only button hover or mouse event are adaptted.
-
-
-# Publishing_Project
