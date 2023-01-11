@@ -1,18 +1,3 @@
-/* 
-주석 : 최상위 div/sector 구역 및 설명 필요한 함수
-css 단위 : 폰트사이즈 => rem : 카멜식 네이밍 (ex. subHeader) : 넓이/높이 => vw / vh / %
-CSS 루트 설정하기
-console.log(); => 개인 확인후 삭제 (문제 있을시 주석처리)
-시멘틱태그 활용하여 구역나누기 (header / body / footer)
-화살표 함수와 일반 함수를 어떻게 구분하여 사용할 것인지 추후 논의
-이벤트명 => 타인이 인지할수 있게 명확히 기재
-작은따옴표('') 사용
-세미클론(;) 필수
-const = 변수명 => 이런식으로 = 양옆에 띄어쓰기 삭제
-function (p1, p2) => ( ) 괄호안 양옆 띄어쓰기 삭제 (ex. ( p1, p2 ) => X)
-구역별 / function 앞뒤 Enter (가독성을 위해)
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +10,6 @@ body {
   align-items: center;
 }
 
-/* FontSize */
 li > h3 {
   font-size: 1.5rem;
   font-family: Whyte Book, 'system-ui';
@@ -47,7 +31,6 @@ div > p {
   font-size: 1.8rem;
 }
 
-/* divCss */
 .titleBox {
   align-items: center;
   text-align: center;
