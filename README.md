@@ -12,10 +12,10 @@
 #### - Being here page              - 양혜린
 #### - Careers page                 - 이주람
 
-### 사용한 기술 스택
-#### - HTML / CSS / JavaScript
+## 사용한 기술 스택
+### - HTML / CSS / JavaScript
 
-### 사용한 라이브러리
-#### - aos / swiper
+## 사용한 라이브러리
+### - aos / swiper
 
 ### only cloned 1 depth page. so only button hover or mouse event are adaptted.
