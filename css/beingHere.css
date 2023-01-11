@@ -1,0 +1,332 @@
+/* 
+주석 : 최상위 div/sector 구역 및 설명 필요한 함수
+css 단위 : 폰트사이즈 => rem : 카멜식 네이밍 (ex. subHeader) : 넓이/높이 => vw / vh / %
+CSS 루트 설정하기
+console.log(); => 개인 확인후 삭제 (문제 있을시 주석처리)
+시멘틱태그 활용하여 구역나누기 (header / body / footer)
+화살표 함수와 일반 함수를 어떻게 구분하여 사용할 것인지 추후 논의
+이벤트명 => 타인이 인지할수 있게 명확히 기재
+작은따옴표('') 사용
+세미클론(;) 필수
+const = 변수명 => 이런식으로 = 양옆에 띄어쓰기 삭제
+function (p1, p2) => ( ) 괄호안 양옆 띄어쓰기 삭제 (ex. ( p1, p2 ) => X)
+구역별 / function 앞뒤 Enter (가독성을 위해)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #dcedf3;
+  color: #17214a;
+  align-items: center;
+}
+
+/* FontSize */
+li > h3 {
+  font-size: 1.5rem;
+  font-family: Whyte Book, 'system-ui';
+}
+
+li > p {
+  font-size: 1.2rem;
+  font-family: Whyte Book, 'system-ui';
+  line-height: 170%;
+}
+
+ul > li {
+  font-size: 1rem;
+  font-family: Monument Grotesk Semi Mono, Monaco, Courier, monospace;
+  line-height: 220%;
+}
+
+div > p {
+  font-size: 1.8rem;
+}
+
+/* divCss */
+.titleBox {
+  align-items: center;
+  text-align: center;
+}
+
+.videoBox {
+  padding-bottom: 110vh;
+}
+
+.playBtn {
+  width: 5vh;
+  height: 5vh;
+  font-size: 2rem;
+  background-color: #17214a;
+  color: #dcedf3;
+  border: none;
+  border-radius: 50%;
+  opacity: 80%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+
+.playBtn:hover {
+  width: 5.5vh;
+  height: 5.5vh;
+  font-size: 1.9rem;
+  background-color: #17214a;
+  color: #dcedf3;
+  border: none;
+  border-radius: 50%;
+  opacity: 80%;
+}
+
+.subTitleBox {
+  height: 40vh;
+  padding: 8vh;
+  margin-bottom: 300px;
+}
+
+.subTitle {
+  margin-top: 5vh;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.contentBox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 16vh;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.img {
+  width: 90vh;
+  height: 115vh;
+  z-index: 0;
+}
+
+.gifSmile {
+  width: auto;
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  top: 87%;
+  left: 78%;
+  z-index: 1;
+}
+
+.gifHeart {
+  width: auto;
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  top: 87%;
+  z-index: 1;
+}
+
+.gifShell {
+  width: auto;
+  height: 20vh;
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 77%;
+  z-index: 1;
+}
+
+.button {
+  background-color: #17214a;
+  color: #dcedf3;
+  width: 14vh;
+  border-radius: 40px;
+  padding: 1rem 0;
+  margin: 3rem auto;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 70%;
+}
+
+.button:active {
+  opacity: 100%;
+}
+
+.liBox {
+  padding-left: 15vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.liBox2 {
+  padding-right: 15vh;
+  padding-top: 8vh;
+}
+
+.padTop {
+  padding-top: 10vh;
+}
+
+.padBottom {
+  padding-bottom: 15vh;
+}
+
+.none {
+  list-style: none;
+}
+
+.textAlign {
+  text-align: center;
+}
+
+.swiper {
+  height: 60vh;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  margin-left: 100px;
+}
+
+.swiper-wrapper > ul > li {
+  float: left;
+  margin-right: 2vh;
+  margin-left: 2vh;
+  list-style: none;
+}
+
+.swiper-wrapper > ul > li:hover {
+  cursor: grab;
+}
+
+.swiper-wrapper > ul > li:active {
+  cursor: grabbing;
+}
+
+/* header & footer css */
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+  margin-bottom: 200px;
+  text-decoration: none;
+}
+
+header > a > img {
+  width: 200px;
+}
+
+header > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > ul > li {
+  list-style: none;
+  margin-left: 4rem;
+  font-size: 0.9rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+  width: 120px;
+}
+
+a {
+  color: #333;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+  margin-top: 300px;
+  text-decoration: none;
+}
+
+footer > div {
+  display: flex;
+  margin-left: 40px;
+}
+
+footer > div:first-child {
+  align-items: flex-start;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+#footerLeft1 > li {
+  list-style: none;
+  letter-spacing: 1px;
+  margin: 20px 40px;
+}
+
+#footerLeft2 > li {
+  list-style: none;
+  letter-spacing: 1px;
+  margin: 20px 40px;
+}
+
+footer > div:last-child {
+  align-items: flex-end;
+}
+
+#footerRight {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+#footerRight > li {
+  list-style: none;
+  margin-right: 60px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+#footerRight > li:first-child {
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+#footerRight > li:first-child:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+li a:hover::after {
+  content: ' ]';
+}
+
+li a:hover::before {
+  content: '[ ';
+}
